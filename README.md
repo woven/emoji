@@ -8,15 +8,17 @@ The initial version supports the popular GitHub Emojis: http://www.emoji-cheat-s
 
 A simple usage example:
 
-    import 'package:emoji/emoji.dart';
+```dart
+import 'package:emoji/emoji.dart';
 
-    main() {
-      var text = 'Rock on! :metal:';
+main() {
+  var text = 'Rock on! :metal:';
 
-      print(EmojiUtil.replaceWithEmojis(text));
+  print(EmojiUtil.replaceWithEmojis(text));
 
-      // Rock on! <img src="https://assets-cdn.github.com/images/icons/emoji/metal.png?v5" class="emoji" />
-    }
+  // Rock on! <img src="https://assets-cdn.github.com/images/icons/emoji/metal.png?v5" class="emoji" />
+}
+```
 
 ## Features and bugs
 
