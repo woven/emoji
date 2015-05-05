@@ -2,7 +2,7 @@ name: emoji
 description: A utility for emojis.
 version: 1.0.0
 author: David Notik <dave@woven.co>
-homepage: http://woven.co
+homepage: https://github.com/woven/emoji
 
 dev_dependencies:
   test: '>=0.12.0 <0.13.0'

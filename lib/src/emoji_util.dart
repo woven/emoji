@@ -5,14 +5,11 @@ library emoji.util;
 
 import '../data/emoji.dart';
 
-/// Utility for working with emojis.
-class EmojiUtil {
-  /// Returns the given text with known emoji names replaced with a corresponding glyph.
-  static String replaceWithEmojis(String text) {
-    var pattern = emojiNameToUrl.keys.join('|').replaceAll('+', r'\+');
+/// Returns the given text with known emoji names replaced with a corresponding glyph.
+String replaceWithEmojis(String text) {
+  var pattern = emojiNameToUrl.keys.join('|').replaceAll('+', r'\+');
 
-    return text.replaceAllMapped(new RegExp(':($pattern):'), (Match m) => _toGlyph(m.group(1)));
-  }
-
-  static _toGlyph(String name) => '<img src="${emojiNameToUrl[name]}" class="emoji" />';
+  return text.replaceAllMapped(new RegExp(':($pattern):'), (Match m) => _toGlyph(m.group(1)));
 }
+
+_toGlyph(String name) => '<img src="${emojiNameToUrl[name]}" class="emoji" />';
