@@ -14,7 +14,7 @@ import 'package:emoji/emoji.dart';
 main() {
   var text = 'Rock on! :metal:';
 
-  print(EmojiUtil.replaceWithEmojis(text));
+  print(replaceWithEmojis(text));
 
   // Rock on! <img src="https://assets-cdn.github.com/images/icons/emoji/metal.png?v5" class="emoji" />
 }

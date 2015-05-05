@@ -6,6 +6,9 @@ library emoji.example;
 import 'package:emoji/emoji.dart';
 
 main() {
-  var awesome = new Awesome();
-  print('awesome: ${awesome.isAwesome}');
+  var text = 'Rock on! :metal:';
+
+  print(replaceWithEmojis(text));
+
+  // Rock on! <img src="https://assets-cdn.github.com/images/icons/emoji/metal.png?v5" class="emoji" />
 }
