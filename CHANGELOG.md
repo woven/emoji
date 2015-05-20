@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.0
+
+- Introduce `replaceEmojiCodesWithGlyphs()` and `replaceEmoticonsWithEmojiCodes()`.
+- The main `replaceWithEmojis()` function now handles emoji codes and common emoticons.
+
 ## 1.0.3
 
 - Update this CHANGELOG. Agh, lots to track with a public package. :)

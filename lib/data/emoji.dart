@@ -1,5 +1,7 @@
-/// Maps an emoji name to a corresponding glyph's URL.
-var emojiNameToUrl = {
+library emoji.data.emoji;
+
+/// Maps an emoji code to a corresponding glyph's URL.
+var emojiCodeToUrl = {
   /// GitHub emoji, as per GitHub's Emojis API.
   /// https://developer.github.com/v3/emojis/
   "+1": "https://assets-cdn.github.com/images/icons/emoji/unicode/1f44d.png?v5",
