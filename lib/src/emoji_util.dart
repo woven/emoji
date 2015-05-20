@@ -15,7 +15,7 @@ String replaceWithEmojis(String text) => replaceEmojiCodesWithGlyphs(replaceEmot
 /// Replaces known emoticons with corresponding emoji codes.
 String replaceEmoticonsWithEmojiCodes(String text) {
   var emoticonPattern = emoticonToEmojiCode.keys.map(escapeRegex).join('|');
-  return text.replaceAllMapped(new RegExp('($emoticonPattern)'), (Match m) => _toEmojiCode(m.group(1)));
+  return text.replaceAllMapped(new RegExp('\\B($emoticonPattern)'), (Match m) => _toEmojiCode(m.group(1)));
 }
 
 /// Replaces known emoji codes with corresponding glyphs.

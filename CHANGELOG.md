@@ -1,9 +1,15 @@
 # Changelog
 
+## 1.1.1
+
+- Don't match emoticons if preceded by a word boundary. This helps us avoid frownies in URLs. :/
+- Update most recent changelog entry to reflect the addition of more tests.
+
 ## 1.1.0
 
 - Introduce `replaceEmojiCodesWithGlyphs()` and `replaceEmoticonsWithEmojiCodes()`.
 - The main `replaceWithEmojis()` function now handles emoji codes and common emoticons.
+- Added more tests.
 
 ## 1.0.3
 
